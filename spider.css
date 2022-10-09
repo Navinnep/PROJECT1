@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.lides {
+    margin: 10%;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.slide {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input {
+    display: none;
+}
+
+.photo {
+    width: 20%;
+    transition: 2s;
+}
+
+.photo img {
+    width: 600px;
+    height: 400px;
+}
+
+.manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -150px;
+    margin-left: -100px;
+    display: flex;
+    justify-content: center;
+    height: 10px;
+    align-content: center;
+}
+
+.lol {
+    border: 2px solid white;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 2s;
+}
+
+.lol:hover {
+    background: gold;
+}
+
+.lol:not(:last-child) {
+    margin-right: 40px;
+}
+
+#touch1:checked~.first {
+    margin-left: 0;
+}
+
+#touch2:checked~.first {
+    margin-left: -20%;
+}
+
+#touch3:checked~.first {
+    margin-left: -40%;
+}

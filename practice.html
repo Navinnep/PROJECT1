@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    /*
+                                                                                                                                            var d = 10;
+
+                                                                                                                                            function add() {
+                                                                                                                                                var a = 2;
+                                                                                                                                                var b = 4;
+                                                                                                                                                var c = a + b + d;
+                                                                                                                                                console.log(c);
+
+
+                                                                                                                                            }
+                                                                                                                                            add();
+                                                                                                                                function ad(a, b, c) {
+
+                                                                                                                                    d = a + b + c;
+                                                                                                                                    console.log(d)
+
+                                                                                                                                }
+                                                                                                                                ad(10, 10, 10);
+                                                                                                                                    function nep(a, b) {
+
+                                                            c = a + b;
+                                                            return c;
+
+                                                        }
+                                                        t = nep(10, 20);
+                                                        console.log(c + 50);
+                                                        document.write(c);
+                                                        confirm("this is correct")
+                                                
+
+                                    show(20, 20);
+
+                                    function show(a, b) {
+
+
+                                        c = a + b;
+                                        console.log(c);
+                                    }
+                                    show(10, 20);
+                                    show(100, 100);
+
+                                    first_
+                                    */
+
+    function show(city, state) {
+        return this.firstName + " " + this.lastName + " " + this.age;
+    }
+    var ob1 = {
+        firstName: "Mohan",
+        lastName: "Kumar",
+        age: 21
+    }
+    var ob2 = {
+        firstName: "Sohan",
+        lastName: "Kumar",
+        age: 27
+    }
+    console.log(show.call(ob1, "bangalore", "karnataka"));
+    console.log(show.call(ob2, "gwalior", "madhya pradesh"));
+    console.log(show.apply(ob1, ["Bangalore", "india"]));
+    console.log(show.apply(ob2, ["Gwalior", "Madhya Pradesh"]))
+
+    var person = {
+        firstName: "Mohan",
+        lastName: "Kumar",
+        fullName: function(city) {
+            return this.firstName + " " + this.lastName + " : city= " + city;
+        }
+    }
+    var doc = {
+        firstName: "Rajesh",
+        lastName: " Bhangeer"
+    }
+
+    console.log(person.fullName.call(doc, "Bangalore"));
+</script>
+
+</html>

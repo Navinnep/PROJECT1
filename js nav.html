@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>
+        Javascript Tutorial</title>
+    <style>
+        .prev,
+        .next {
+            position: absolute;
+            top: 60%;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 20px;
+            color: black;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .slider {
+            width: 100%;
+        }
+        
+        .slider img {
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        .dot {
+            background-color: chartreuse;
+            border-radius: 20px;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            float: none;
+            position: relative;
+        }
+        
+        .active {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>
+            Slider Image using Javascript</h1>
+    </center>
+    <div class="slideshow" id="main">
+        <div class="slider">
+            <img src="1.jpg">
+        </div>
+        <div class="slider">
+            <img src="2.jpg">
+        </div>
+        <div class="slider">
+            <img src="3.jpg">
+        </div>
+        <a class="prev" onclick="prevSlide">
+&#10094;</a>
+        <a class="next" onclick="nextSlide">
+&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center;">
+        <span class="dot " onclick="gotoslide(1)">
+</span>
+        <span class="dot " onclick="gotoslide(2)">
+        </span>
+        <span class="dot " onclick="gotoslide(3)">
+</span>
+    </div>
+    <script>
+        /* var slide = 1;
+                        show(slide);
+
+                        function nextSlide(n) {
+                            show(slide += n);
+                        }
+
+                        function show(n) {
+                            var i;
+                            var slider_img = document.getElementsByClassName("slider");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slider_img.length; i++) {
+                                slider_img[i].style.display = "none";
+                            }
+
+
+
+
+                            if (n > slider_img.length)
+                                slide = 1;
+                            if (n < 1)
+                                slide = slider_img.length; //(slider_img[3])
+
+                            slider_img[slide - 1].style.display = "block";
+                            
+
+                           
+
+
+                        }*/
+        var a = document.getElementById("main");
+        var b = a.getElementByclassName("slider");
+
+        function nextSlide() {
+            a.append(slider[0]);
+
+        }
+    </script>
+</body>
+
+</html>
